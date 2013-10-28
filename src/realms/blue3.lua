@@ -27,6 +27,7 @@ end
 --indigo1
 function blue.depart(realm)
 
+   love.audio.stop()
    mysticrealms:teleport(realm)
 
 end

@@ -6,7 +6,6 @@ local orangeplanet = clay:new()
 
 function orangeplanet:create()
 
-   print('orangeplanet appears')
    self:breathe("orangeplanet",25,0,incantations.plans.orangeplanet.emblems,530,460,incantations.plans.orangeplanet.breadth,incantations.plans.orangeplanet.height,4,math.random(5,10) * .01,false,false)
 
 end

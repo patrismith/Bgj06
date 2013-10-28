@@ -11,9 +11,6 @@ local guns2 = require('golems.guns2')
 
 function violet:enter()
 
-
-   love.audio.play(incantations.song03)
-
    self.color = {255,0,255}
 
    self.golems = {}
@@ -29,6 +26,7 @@ function violet:enter()
    self.golems[1].malleable =
       function(self,x,y,key)
          if self.hover then
+            love.audio.stop()
             violet.depart("violet3")
          end
       end
@@ -37,6 +35,7 @@ function violet:enter()
    self.golems[2].malleable =
       function(self,x,y,key)
          if self.hover then
+            love.audio.stop()
             violet.depart("violet3")
          end
       end
@@ -45,7 +44,8 @@ function violet:enter()
    self.golems[3].malleable =
       function(self,x,y,key)
          if self.hover then
-            violet.depart("violet3")
+           love.audio.stop()
+           violet.depart("violet3")
          end
       end
 
@@ -56,7 +56,6 @@ end
 --violet3 win
 function violet.depart(realm)
 
-   love.audio.stop()
    mysticrealms:teleport(realm)
 
 end

@@ -9,6 +9,7 @@ local tinydollar = require('golems.tinydollar')
 
 function green:enter()
 
+   love.audio.play(incantations.song03)
    self.color = {0,255,0}
 
    self.golems = {}

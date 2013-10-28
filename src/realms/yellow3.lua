@@ -26,6 +26,8 @@ function yellow:enter()
             if self.hover then
                yellow.power = yellow.power + 1
                if yellow.power >= 5 then
+
+                  love.audio.stop()
                   yellow.depart("green1")
                end
             end

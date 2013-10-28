@@ -47,7 +47,6 @@ function orange:enter()
    self.golems[1].malleable =
       function (self,x,y,key)
          if self.hover then
-            print("astro is alive")
             for i,v in ipairs(orange.golems) do
                if v:name() == "bigastro" then
                   v.alive = true

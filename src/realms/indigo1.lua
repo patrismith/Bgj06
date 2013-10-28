@@ -13,6 +13,7 @@ local clover = require('golems.clover')
 
 function indigo:enter()
 
+   love.audio.play(incantations.song02)
    self.color = {75,0,130}
 
    self.golems = {}

@@ -10,7 +10,6 @@ local highheel = require('golems.highheel')
 function red:enter()
 
    self.color = {255,0,0}
-   print('red')
 
    self.golems = {}
 

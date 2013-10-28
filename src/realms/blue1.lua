@@ -9,9 +9,6 @@ local bluemouth = require('golems.bluemouth')
 
 function blue:enter()
 
-
-   love.audio.play(incantations.song02)
-
    self.color = {0,0,255}
 
    self.golems = {}

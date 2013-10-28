@@ -29,6 +29,7 @@ function orange:enter()
          v.ok = true
          v.action =
             function (self)
+               love.audio.stop()
                orange.depart("yellow1")
             end
 
@@ -48,7 +49,6 @@ end
 --yellow1
 function orange.depart(realm)
 
-   love.audio.stop()
    mysticrealms:teleport(realm)
 
 end

@@ -52,6 +52,8 @@ end
 --yellow4
 function green.depart(realm)
 
+   love.audio.stop()
+   love.audio.play(incantations.song04)
    mysticrealms:teleport(realm)
 
 end

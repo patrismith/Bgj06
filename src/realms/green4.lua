@@ -9,7 +9,6 @@ local planetcoin = require('golems.planetcoin')
 function green:enter()
 
    self.color = {0,255,0}
-   print('green summoned')
 
    self.golems = {}
 
@@ -32,7 +31,6 @@ end
 --blue1
 function green.depart(realm)
 
-   love.audio.stop()
    mysticrealms:teleport(realm)
 
 end
