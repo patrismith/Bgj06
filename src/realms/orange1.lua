@@ -24,15 +24,9 @@ function orange:enter()
 
    for i,v in ipairs(self.golems) do
       if v:name() == "littleastro" then
-         v:create(math.random(400,800),math.random(300,600),false)
+         v:create(math.random(400,750),math.random(300,550),false)
       elseif v:name() == "orangeplanet" then
          v:create()
-         v.malleable =
-            function (self, x, y, key)
-               if self.hover then
-                  orange.depart("orange2")
-               end
-            end
       elseif v:name() == "bigastro" then
          v:create()
          v.malleable =
@@ -54,6 +48,14 @@ function orange:enter()
             end
          end
       end
+
+   self.golems[2].malleable =
+            function (self, x, y, key)
+               if self.hover then
+                  orange.depart("orange2")
+               end
+            end
+
 
 end
 
