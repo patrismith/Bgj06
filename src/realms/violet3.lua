@@ -12,7 +12,7 @@ function violet:enter()
 
    love.audio.play(incantations.song04)
 
-   self.color = {255,0,255}
+   self.color = {127,0,255}
 
    self.golems = {}
 

@@ -11,7 +11,7 @@ local guns2 = require('golems.guns2')
 
 function violet:enter()
 
-   self.color = {255,0,255}
+   self.color = {127,0,255}
 
    self.golems = {}
 

@@ -26,7 +26,7 @@ function incantations:summon()
    self.song03:setLooping(true)
    self.song04 = love.audio.newSource("artifacts/awesomesong.ogg")
    self.song04:setLooping(true)
-
+   self.song04:setVolume(1.3)
 
 
    self.plans = {}
